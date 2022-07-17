@@ -88,6 +88,7 @@ ul {
 }
 
 .contact {
+  display: flex;
   margin-left: 305px;
   align-self: center;
   font-weight: 500;
@@ -143,14 +144,21 @@ ul {
 /* Hero */
 
 .hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
   text-align: center;
 
-  background-image: url(../images/Overlay.jpg);
-
-  background-size: cover;
+  border-color: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Img-hero.jpg);
 }
 
 .hero-title {
@@ -191,6 +199,7 @@ ul {
   width: 70px;
   height: 70px;
 }
+
 .feature-container {
   padding: 25px 100px;
   margin-bottom: 30px;
@@ -202,6 +211,7 @@ ul {
   margin-top: 94px;
   margin-bottom: 94px;
 }
+
 .feature-list:not(:last-child) {
   margin-right: 40px;
 }
