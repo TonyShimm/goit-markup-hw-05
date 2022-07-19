@@ -89,7 +89,7 @@ ul {
 
 .contact {
   display: flex;
-  margin-left: 305px;
+  margin-left: auto;
   align-self: center;
   font-weight: 500;
   font-size: 14px;
@@ -132,6 +132,9 @@ ul {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -213,7 +216,7 @@ ul {
 }
 
 .feature-list:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 30px;
 }
 .feature-list {
   width: 270px;
@@ -235,6 +238,10 @@ ul {
 }
 
 /* what-we-do */
+
+.what-we-do {
+  padding-top: 0;
+}
 
 .what-we-do-title {
   margin-bottom: 50px;
@@ -320,17 +327,26 @@ img {
   fill: #ffffff;
 }
 .team-link {
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
+  height: 44px;
   border-radius: 50%;
 }
 .team-container {
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
+
+.clients {
+  padding-top: 0;
+}
+
 .our-clients {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-top: 94px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -338,7 +354,7 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
 }
-.clients-list {
+.client-box {
   display: flex;
 }
 .clients-icon {
@@ -347,13 +363,15 @@ img {
   fill: #afb1b8;
 }
 .clients-link {
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.clients-link:not(:last-child) {
+.clients-list:not(:last-child) {
   margin-right: 30px;
 }
 .clients-link:hover {
@@ -370,16 +388,16 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.contact-container-footer {
-  padding-top: 60px;
-}
+
 .container-list {
   display: flex;
+  align-items: baseline;
 }
+
 .invite-container {
-  padding-top: 72px;
-  padding-left: 70px;
+  margin-left: 70px;
 }
+
 .team-link-footer:not(:last-child) {
   margin-right: 10px;
 }
@@ -408,7 +426,7 @@ img {
   color: #2196f3;
 }
 .invite {
-  padding-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -432,8 +450,11 @@ img {
   background-color: #2196f3;
 }
 .team-link-footer {
-  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
+  height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -458,7 +479,7 @@ img {
 }
 .btn-list {
   display: flex;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 .btn-portfolio {
@@ -515,8 +536,8 @@ img {
 }
 
 .project-items:hover {
-  box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.12), 4px 0px 4px rgba(0, 0, 0, 0.06),
-    6px 1px 4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-items:nth-child(3n) {
